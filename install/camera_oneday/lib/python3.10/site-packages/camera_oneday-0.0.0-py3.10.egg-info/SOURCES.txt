@@ -13,6 +13,7 @@ camera_oneday/camera_server.py
 camera_oneday/canny.py
 camera_oneday/img_publisher.py
 launch/camera.launch.py
+launch/camera_server.launch.py
 launch/canny.launch.py
 param/filter.yaml
 param/size.yaml

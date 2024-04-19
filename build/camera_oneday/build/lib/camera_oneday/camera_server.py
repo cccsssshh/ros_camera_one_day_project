@@ -18,6 +18,7 @@ class Capture_server(Node):
         self.sub_image = None
         self.video_writer = None
         self.is_recording = False
+        self.file_dir = "/home/addinedu/Downloads/"
 
     def service_callback(self, request, response):
         action_type = request.action
@@ -47,6 +48,7 @@ class Capture_server(Node):
             if self.is_recording == True:
                 if action_type == "recording stop":
                     self.recording_stop()
+                    response.message = "Recording is done."
 
         response.success = True
 
@@ -54,12 +56,13 @@ class Capture_server(Node):
     
     def recording_start(self, msg):
         self.get_logger().info(f'Recording is started', once = True)
-        filename = '/home/addinedu/Downloads/video_'+ self.now + ".avi"
+        filename = self.file_dir + 'video_'+ self.now + ".avi"
         img = self.cv_bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
         frame_height, frame_width = img.shape[:2]
         
         if self.is_recording == False:
-            self.video_writer = cv2.VideoWriter(filename, cv2.VideoWriter_fourcc('M','J','P','G'), 30, (frame_width, frame_height))
+            fourcc = cv2.VideoWriter_fourcc(*'DIVX')
+            self.video_writer = cv2.VideoWriter(filename, fourcc, 30, (frame_width, frame_height))
             self.is_recording = True
 
         self.record_frame(msg)
@@ -82,7 +85,7 @@ class Capture_server(Node):
         self.get_logger().info(f'Capture is started')
         img = self.cv_bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
         now = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = '/home/addinedu/Downloads/capture_'+ now + ".png"
+        filename = self.file_dir + 'capture_'+ now + ".png"
         cv2.imwrite(filename, img)
 
         if self.sub_image is not None:
