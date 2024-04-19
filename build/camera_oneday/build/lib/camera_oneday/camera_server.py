@@ -11,14 +11,29 @@ import datetime
 class Capture_server(Node):
 
     def __init__(self):
-        super().__init__("capture")
+        super().__init__("camera_service")
         self.cv_bridge = CvBridge()
         self.qos = QoSProfile(depth=10)
-        self.capture_service = self.create_service(Capture, 'capture_service', self.service_callback)
+        self.capture_service = self.create_service(Capture, 'camera_service', self.service_callback)
         self.sub_image = None
         self.video_writer = None
         self.is_recording = False
-        self.file_dir = "/home/addinedu/Downloads/"
+
+        self.declare_parameter("file_directory", '')
+        self.declare_parameter("frame_rate" , 20)
+        self.declare_parameter("width" , 640)
+        self.declare_parameter("height" , 480)
+
+        self.file_dir = self.get_parameter("file_directory").value
+        self.frame_rate = self.get_parameter("frame_rate").value
+        self.width = self.get_parameter("width").value
+        self.height = self.get_parameter("height").value
+
+        self.get_logger().info(f"saving directory is {self.file_dir}")
+        self.get_logger().info(f"frame_rate : {self.frame_rate}")
+        self.get_logger().info(f"width : {self.width}")
+        self.get_logger().info(f"height : {self.height}")
+
 
     def service_callback(self, request, response):
         action_type = request.action
@@ -58,11 +73,10 @@ class Capture_server(Node):
         self.get_logger().info(f'Recording is started', once = True)
         filename = self.file_dir + 'video_'+ self.now + ".avi"
         img = self.cv_bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
-        frame_height, frame_width = img.shape[:2]
         
         if self.is_recording == False:
             fourcc = cv2.VideoWriter_fourcc(*'DIVX')
-            self.video_writer = cv2.VideoWriter(filename, fourcc, 30, (frame_width, frame_height))
+            self.video_writer = cv2.VideoWriter(filename, fourcc, self.frame_rate, (self.width, self.height))
             self.is_recording = True
 
         self.record_frame(msg)

@@ -18,9 +18,11 @@ class ImgPublisher(Node):
         self.cv_bridge = CvBridge()
 
         self.declare_parameter("width", 640)
-        self.width = self.get_parameter("width").value
         self.declare_parameter("length", 480)
+
+        self.width = self.get_parameter("width").value
         self.length = self.get_parameter("length").value
+        
         output_msg = "Video width : " + str(self.width) + "\n\r"
         output_msg = output_msg + "Video Length : " + str(self.length)
         self.get_logger().info(output_msg)

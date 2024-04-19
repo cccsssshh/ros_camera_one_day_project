@@ -16,6 +16,7 @@ launch/camera.launch.py
 launch/camera_server.launch.py
 launch/canny.launch.py
 param/filter.yaml
+param/saving.yaml
 param/size.yaml
 resource/camera_oneday
 test/test_copyright.py

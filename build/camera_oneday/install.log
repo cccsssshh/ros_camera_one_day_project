@@ -13,6 +13,7 @@
 /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/camera_oneday/launch/camera_server.launch.py
 /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/camera_oneday/param/size.yaml
 /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/camera_oneday/param/filter.yaml
+/home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/camera_oneday/param/saving.yaml
 /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday-0.0.0-py3.10.egg-info/top_level.txt
 /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday-0.0.0-py3.10.egg-info/requires.txt

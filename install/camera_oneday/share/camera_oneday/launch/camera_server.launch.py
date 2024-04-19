@@ -7,26 +7,28 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 def generate_launch_description(): 
-    param_dir = LaunchConfiguration(
+    size_dir = LaunchConfiguration(
         'param_dir',
         default=os.path.join(
         get_package_share_directory('camera_oneday'),
         'param',
         'size.yaml')
         )
+    saving_dir = LaunchConfiguration(
+        'param_dir',
+        default=os.path.join(
+        get_package_share_directory('camera_oneday'),
+        'param',
+        'saving.yaml')
+        )
     
     return LaunchDescription(
         [
-            DeclareLaunchArgument( 
-                'param_dir',
-                default_value=param_dir
-            ),
-
             Node(
                 package='camera_oneday',
                 executable='camera_server',
                 name='camera_server',
-                parameters=[param_dir],
+                parameters=[size_dir, saving_dir],
                 output='screen'),
         ]
     )
