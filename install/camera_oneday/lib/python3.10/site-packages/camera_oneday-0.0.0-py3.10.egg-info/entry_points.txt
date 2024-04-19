@@ -1,0 +1,4 @@
+[console_scripts]
+camera_server = camera_oneday.camera_server:main
+canny = camera_oneday.canny:main
+img_publisher = camera_oneday.img_publisher:main

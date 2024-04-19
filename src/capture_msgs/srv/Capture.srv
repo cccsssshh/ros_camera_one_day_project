@@ -1,0 +1,7 @@
+# Request part
+string filter_type
+string action
+---
+# Response part
+bool success
+string message

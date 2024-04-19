@@ -1,0 +1,39 @@
+[0.698s] Invoking command in '/home/addinedu/amr_ws/ros/camera_oneday/src/camera_oneday': PYTHONPATH=/home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/prefix_override:/home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/camera_oneday build --build-base /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build install --record /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/install.log --single-version-externally-managed install_data
+[0.912s] running egg_info
+[0.928s] writing ../../build/camera_oneday/camera_oneday.egg-info/PKG-INFO
+[0.928s] writing dependency_links to ../../build/camera_oneday/camera_oneday.egg-info/dependency_links.txt
+[0.928s] writing entry points to ../../build/camera_oneday/camera_oneday.egg-info/entry_points.txt
+[0.929s] writing requirements to ../../build/camera_oneday/camera_oneday.egg-info/requires.txt
+[0.929s] writing top-level names to ../../build/camera_oneday/camera_oneday.egg-info/top_level.txt
+[0.961s] reading manifest file '../../build/camera_oneday/camera_oneday.egg-info/SOURCES.txt'
+[0.962s] writing manifest file '../../build/camera_oneday/camera_oneday.egg-info/SOURCES.txt'
+[0.962s] running build
+[0.962s] running build_py
+[0.962s] copying camera_oneday/__init__.py -> /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build/lib/camera_oneday
+[0.962s] copying camera_oneday/canny.py -> /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build/lib/camera_oneday
+[0.962s] copying camera_oneday/img_publisher.py -> /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build/lib/camera_oneday
+[0.962s] copying camera_oneday/camera_server.py -> /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build/lib/camera_oneday
+[0.963s] running install
+[0.967s] running install_lib
+[0.983s] copying /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build/lib/camera_oneday/camera_server.py -> /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday
+[0.983s] byte-compiling /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday/camera_server.py to camera_server.cpython-310.pyc
+[0.984s]   File "/home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday/camera_server.py", line 30
+[0.984s]     def capture_callback(self, msg)
+[0.984s]                                    ^
+[0.984s] SyntaxError: expected ':'
+[0.984s] 
+[0.984s] running install_data
+[0.984s] copying resource/camera_oneday -> /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/ament_index/resource_index/packages
+[0.984s] copying package.xml -> /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/camera_oneday
+[0.984s] copying launch/camera.launch.py -> /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/camera_oneday/launch
+[0.984s] copying launch/canny.launch.py -> /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/camera_oneday/launch
+[0.984s] copying param/size.yaml -> /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/camera_oneday/param
+[0.985s] copying param/filter.yaml -> /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/camera_oneday/param
+[0.985s] running install_egg_info
+[1.001s] removing '/home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday-0.0.0-py3.10.egg-info' (and everything under it)
+[1.001s] Copying ../../build/camera_oneday/camera_oneday.egg-info to /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday-0.0.0-py3.10.egg-info
+[1.002s] running install_scripts
+[1.142s] Installing canny script to /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/camera_oneday
+[1.142s] Installing img_publisher script to /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/camera_oneday
+[1.142s] writing list of installed files to '/home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/install.log'
+[1.160s] Invoked command in '/home/addinedu/amr_ws/ros/camera_oneday/src/camera_oneday' returned '0': PYTHONPATH=/home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/prefix_override:/home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/camera_oneday build --build-base /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build install --record /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/install.log --single-version-externally-managed install_data

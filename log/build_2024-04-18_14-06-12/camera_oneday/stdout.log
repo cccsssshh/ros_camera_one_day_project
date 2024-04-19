@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/camera_oneday/camera_oneday.egg-info
+writing ../../build/camera_oneday/camera_oneday.egg-info/PKG-INFO
+writing dependency_links to ../../build/camera_oneday/camera_oneday.egg-info/dependency_links.txt
+writing entry points to ../../build/camera_oneday/camera_oneday.egg-info/entry_points.txt
+writing requirements to ../../build/camera_oneday/camera_oneday.egg-info/requires.txt
+writing top-level names to ../../build/camera_oneday/camera_oneday.egg-info/top_level.txt
+writing manifest file '../../build/camera_oneday/camera_oneday.egg-info/SOURCES.txt'
+reading manifest file '../../build/camera_oneday/camera_oneday.egg-info/SOURCES.txt'
+writing manifest file '../../build/camera_oneday/camera_oneday.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build
+creating /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build/lib
+creating /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build/lib/camera_oneday
+copying camera_oneday/__init__.py -> /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build/lib/camera_oneday
+copying camera_oneday/img_publisher.py -> /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build/lib/camera_oneday
+running install
+running install_lib
+creating /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday
+copying /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build/lib/camera_oneday/__init__.py -> /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday
+copying /home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/build/lib/camera_oneday/img_publisher.py -> /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday
+byte-compiling /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday/img_publisher.py to img_publisher.cpython-310.pyc
+running install_data
+creating /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/ament_index
+creating /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/ament_index/resource_index
+creating /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/ament_index/resource_index/packages
+copying resource/camera_oneday -> /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/ament_index/resource_index/packages
+copying package.xml -> /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/share/camera_oneday
+running install_egg_info
+Copying ../../build/camera_oneday/camera_oneday.egg-info to /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday-0.0.0-py3.10.egg-info
+running install_scripts
+Installing img_publisher script to /home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/camera_oneday
+writing list of installed files to '/home/addinedu/amr_ws/ros/camera_oneday/build/camera_oneday/install.log'

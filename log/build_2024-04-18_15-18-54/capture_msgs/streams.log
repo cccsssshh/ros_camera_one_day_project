@@ -1,0 +1,42 @@
+[0.177s] Invoking command in '/home/addinedu/amr_ws/ros/camera_oneday/build/capture_msgs': CMAKE_PREFIX_PATH=/home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday:/home/addinedu/amr_ws/ros/opencv_study/install/opencv_tutorials:/opt/ros/humble /usr/bin/cmake /home/addinedu/amr_ws/ros/camera_oneday/src/capture_msgs -DCMAKE_INSTALL_PREFIX=/home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs
+[0.278s] -- The C compiler identification is GNU 11.4.0
+[0.366s] -- The CXX compiler identification is GNU 11.4.0
+[0.375s] -- Detecting C compiler ABI info
+[0.429s] -- Detecting C compiler ABI info - done
+[0.438s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.439s] -- Detecting C compile features
+[0.440s] -- Detecting C compile features - done
+[0.443s] -- Detecting CXX compiler ABI info
+[0.506s] -- Detecting CXX compiler ABI info - done
+[0.512s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.512s] -- Detecting CXX compile features
+[0.513s] -- Detecting CXX compile features - done
+[0.519s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.798s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.891s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.958s] -- Added test 'lint_cmake' to check CMake code style
+[0.959s] -- Added test 'xmllint' to check XML markup files
+[0.961s] -- Configuring done
+[0.964s] -- Generating done
+[0.965s] -- Build files have been written to: /home/addinedu/amr_ws/ros/camera_oneday/build/capture_msgs
+[0.971s] Invoked command in '/home/addinedu/amr_ws/ros/camera_oneday/build/capture_msgs' returned '0': CMAKE_PREFIX_PATH=/home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday:/home/addinedu/amr_ws/ros/opencv_study/install/opencv_tutorials:/opt/ros/humble /usr/bin/cmake /home/addinedu/amr_ws/ros/camera_oneday/src/capture_msgs -DCMAKE_INSTALL_PREFIX=/home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs
+[0.972s] Invoking command in '/home/addinedu/amr_ws/ros/camera_oneday/build/capture_msgs': CMAKE_PREFIX_PATH=/home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday:/home/addinedu/amr_ws/ros/opencv_study/install/opencv_tutorials:/opt/ros/humble /usr/bin/cmake --build /home/addinedu/amr_ws/ros/camera_oneday/build/capture_msgs -- -j12 -l12
+[1.000s] Invoked command in '/home/addinedu/amr_ws/ros/camera_oneday/build/capture_msgs' returned '0': CMAKE_PREFIX_PATH=/home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday:/home/addinedu/amr_ws/ros/opencv_study/install/opencv_tutorials:/opt/ros/humble /usr/bin/cmake --build /home/addinedu/amr_ws/ros/camera_oneday/build/capture_msgs -- -j12 -l12
+[1.022s] Invoking command in '/home/addinedu/amr_ws/ros/camera_oneday/build/capture_msgs': CMAKE_PREFIX_PATH=/home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday:/home/addinedu/amr_ws/ros/opencv_study/install/opencv_tutorials:/opt/ros/humble /usr/bin/cmake --install /home/addinedu/amr_ws/ros/camera_oneday/build/capture_msgs
+[1.028s] -- Install configuration: ""
+[1.028s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/ament_index/resource_index/package_run_dependencies/capture_msgs
+[1.028s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/ament_index/resource_index/parent_prefix_path/capture_msgs
+[1.028s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/capture_msgs/environment/ament_prefix_path.sh
+[1.028s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/capture_msgs/environment/ament_prefix_path.dsv
+[1.028s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/capture_msgs/environment/path.sh
+[1.028s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/capture_msgs/environment/path.dsv
+[1.028s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/capture_msgs/local_setup.bash
+[1.029s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/capture_msgs/local_setup.sh
+[1.029s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/capture_msgs/local_setup.zsh
+[1.029s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/capture_msgs/local_setup.dsv
+[1.029s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/capture_msgs/package.dsv
+[1.029s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/ament_index/resource_index/packages/capture_msgs
+[1.029s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/capture_msgs/cmake/capture_msgsConfig.cmake
+[1.029s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/capture_msgs/cmake/capture_msgsConfig-version.cmake
+[1.029s] -- Installing: /home/addinedu/amr_ws/ros/camera_oneday/install/capture_msgs/share/capture_msgs/package.xml
+[1.031s] Invoked command in '/home/addinedu/amr_ws/ros/camera_oneday/build/capture_msgs' returned '0': CMAKE_PREFIX_PATH=/home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday:/home/addinedu/amr_ws/ros/opencv_study/install/opencv_tutorials:/opt/ros/humble /usr/bin/cmake --install /home/addinedu/amr_ws/ros/camera_oneday/build/capture_msgs

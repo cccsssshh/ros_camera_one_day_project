@@ -1,0 +1,8 @@
+setup.py
+capture_msgs/__init__.py
+capture_msgs.egg-info/PKG-INFO
+capture_msgs.egg-info/SOURCES.txt
+capture_msgs.egg-info/dependency_links.txt
+capture_msgs.egg-info/top_level.txt
+capture_msgs/srv/__init__.py
+capture_msgs/srv/_capture.py

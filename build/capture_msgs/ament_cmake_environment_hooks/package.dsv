@@ -1,0 +1,4 @@
+source;share/capture_msgs/local_setup.bash
+source;share/capture_msgs/local_setup.dsv
+source;share/capture_msgs/local_setup.sh
+source;share/capture_msgs/local_setup.zsh

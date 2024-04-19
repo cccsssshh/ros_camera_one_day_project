@@ -1,0 +1,4 @@
+canny:
+  ros__parameters:
+    thrs1: 1000
+    thrs2: 2000

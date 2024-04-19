@@ -1,0 +1,5 @@
+  File "/home/addinedu/amr_ws/ros/camera_oneday/install/camera_oneday/lib/python3.10/site-packages/camera_oneday/camera_server.py", line 21
+    self.sub_capture self.create_subscription(
+                     ^^^^
+SyntaxError: invalid syntax
+

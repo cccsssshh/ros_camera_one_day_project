@@ -1,0 +1,6 @@
+{
+  "package_name": "capture_msgs",
+  "non_idl_tuples": [
+    "/home/addinedu/amr_ws/ros/camera_oneday/src/capture_msgs:srv/Capture.srv"
+  ]
+}

@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from capture_msgs/srv/Capture.srv
+// generated code does not contain a copyright notice
+
+
+module capture_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request part")
+    struct Capture_Request {
+      string filter_type;
+
+      string action;
+    };
+    @verbatim (language="comment", text=
+      "Response part")
+    struct Capture_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};
