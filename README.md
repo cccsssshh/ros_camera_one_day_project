@@ -38,7 +38,17 @@ Service call - O
 ![image](https://github.com/cccsssshh/ros_camera_one_day_project/assets/157219758/e0fef340-6df4-4b37-9136-7478e6417535)
 
 ## 실행 순서
+```
 1. ros2 launch camera_oneday camera.launch.py
+```
+![Screenshot from 2024-04-22 17-23-47](https://github.com/cccsssshh/ros_camera_one_day_project/assets/157219758/7be23d45-38aa-4a64-b0e5-907291800941)
+```
 2. ros2 launch camera_oneday canny.launch.py
+```
+![Screenshot from 2024-04-22 17-24-53](https://github.com/cccsssshh/ros_camera_one_day_project/assets/157219758/543146b9-8dd5-4a38-995f-13ec41050f1c)
+```
 3. ros2 launch camera_oneday camera_server.launch.py
+```
+```
 4. ros2 service call /capture_service capture_msgs/srv/Capture "{filter_type : <필터>, action : <행동>}"
+```
