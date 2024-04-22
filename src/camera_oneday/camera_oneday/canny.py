@@ -34,7 +34,7 @@ class ImgSubscriber(Node): # ImgSubcriber 클래스 선언, rclpy의 node 클래
             )
         self.subscription  # prevent unused variable warning
 
-        self.canny_publisher = self.create_publisher(Image, '/canny_edge', self.qos) # canny_edge 이미지 메세지 발행자 생성 
+        self.canny_publisher = self.create_publisher(Image, '/canny_edge', self.qos) # canny_edge 이미지 메세지 발행자 생성
 
     def listener_callback(self, msg): # 구독자가 토픽을 받았을 때 호출되는 콜백함수
         img = self.cv_bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8') # ROS 이미지 메시지를 OpenCV 이미지(numpy.ndarray)로 변환. 'bgr8'는 색상 인코딩 형식
@@ -52,13 +52,13 @@ class ImgSubscriber(Node): # ImgSubcriber 클래스 선언, rclpy의 node 클래
 def main(args = None):
     rp.init(args= args) # rclpy 초기화, ros2 시스템과의 통신을 시작하기 전 필수 호출
 
-    img_subscriber = ImgSubscriber() # ImgSubcriber 클래스 인스턴스 생성
+    node = ImgSubscriber() # ImgSubcriber 클래스 인스턴스 생성
     try: # rp.spin()을 블로킹 모드로 실행
-        rp.spin(img_subscriber) # node에 대해 무한 루프, 프로그램이 종료될 때까지 블로킹 상태로 유지
+        rp.spin(node) # node에 대해 무한 루프, 프로그램이 종료될 때까지 블로킹 상태로 유지
     except KeyboardInterrupt: # 키보드 인터럽트 (Ctrl + C)로 중단 됐을 때 실행
-        img_subscriber.get_logger().info('Stopped by Keyboard') # Ctrl + C로 중단되었을 때 로깅
+        node.get_logger().info('Stopped by Keyboard') # Ctrl + C로 중단되었을 때 로깅
     finally: #프로그램 종료시 실행
-        img_subscriber.destroy_node() # 노드의 리소스를 정리하고 종료, 노드와 관련된 ROS 핸들을 정리
+        node.destroy_node() # 노드의 리소스를 정리하고 종료, 노드와 관련된 ROS 핸들을 정리
         rp.shutdown() # rclpy 라이브러리 종료, ROS2와의 모든 연결 종료, 리소스 해제
 
 
