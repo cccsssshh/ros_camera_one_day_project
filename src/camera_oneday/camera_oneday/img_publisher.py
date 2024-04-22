@@ -1,12 +1,14 @@
 import rclpy as rp # ROS2의 Python 라이브러리, 주로 Node를 구현, 관리
 from rclpy.node import Node # rclpy 패키지의 Node 클래스 import
 from sensor_msgs.msg import Image # sensor_msgs 패키지에서 Image 메세지 타입 import, ROS2에서 이미지를 주고 받을 때 사용되는 메세지 형식
-from cv_bridge import CvBridge # ROS2 이미지 메세지와 openCV 이미지 포멧 간의 변환을 도와주는 라이브러리 중 CvBridge를 import
+
 import cv2 # Opencv 라이브러리를 cv2라는 이름으로 import, 컴퓨터 비전 프로젝트에 필요한 다양한 기능을 제공
+from cv_bridge import CvBridge # ROS2 이미지 메세지와 openCV 이미지 포멧 간의 변환을 도와주는 라이브러리 중 CvBridge를 import
 
 class ImgPublisher(Node): # Imgpublisher 클래스 선언, rclpy의 node 클래스를 부모로 함
     def __init__(self): # 초기 선언
         super().__init__("img_publisher") # 노드 이름 선언
+        # ROS 2 노드에 메시지 발행자를 생성
         self.publisher = self.create_publisher(
             Image, # 메세지 타입
             "/camera", # 토픽, String형태
