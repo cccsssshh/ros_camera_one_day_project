@@ -1,12 +1,14 @@
 import rclpy as rp # ROS2의 Python 라이브러리, 주로 Node를 구현, 관리
 from rclpy.node import Node # rclpy 패키지의 Node 클래스 import
 from sensor_msgs.msg import Image # sensor_msgs 패키지에서 Image 메세지 타입 import, ROS2에서 이미지를 주고 받을 때 사용되는 메세지 형식
-from cv_bridge import CvBridge # ROS2 이미지 메세지와 openCV 이미지 포멧 간의 변환을 도와주는 라이브러리 중 CvBridge를 import
+
 import cv2 # Opencv 라이브러리를 cv2라는 이름으로 import, 컴퓨터 비전 프로젝트에 필요한 다양한 기능을 제공
+from cv_bridge import CvBridge # ROS2 이미지 메세지와 openCV 이미지 포멧 간의 변환을 도와주는 라이브러리 중 CvBridge를 import
 
 class ImgPublisher(Node): # Imgpublisher 클래스 선언, rclpy의 node 클래스를 부모로 함
     def __init__(self): # 초기 선언
         super().__init__("img_publisher") # 노드 이름 선언
+        # ROS 2 노드에 메시지 발행자를 생성
         self.publisher = self.create_publisher(
             Image, # 메세지 타입
             "/camera", # 토픽, String형태
@@ -36,14 +38,14 @@ class ImgPublisher(Node): # Imgpublisher 클래스 선언, rclpy의 node 클래�
         img = self.cv_bridge.cv2_to_imgmsg(frame, "bgr8") # OpenCV 이미지(numpy.ndarray)를 ROS 이미지 메시지로 변환. 'bgr8'는 색상 인코딩 형식
         self.publisher.publish(img) # 변환된 이미지 메시지를 ROS 토픽으로 발행
         self.get_logger().info(f"msg type : {type(img)}", once=True) # 발행된 이미지 메시지의 타입 로깅, 로그는 한 번만 출력
-        #cv2.waitKey(1) # cv2.waitkey(delay), delay : 키 입력을 기다리는 시간(ms 단위), delay = 0 이면 무한히 대기
+        #cv2.waitKey(1) # cv2.waitkey(delay), delay : 키 입력을 기다리는 시간(ms 단위), delay = 0 이면 무한히 대기 - imshow가 없는데 이걸 왜 썼지?
 
 def main():
-    rp.init()
+    rp.init() # rclpy 초기화, ros2 시스템과의 통신을 시작하기 전 필수 호출
     node = ImgPublisher() # ImgPublisher 클래스 인스턴스 생성
-    rp.spin(node)
-    node.destroy_node()
-    rp.shutdown()
+    rp.spin(node) # node에 대해 무한 루프, 프로그램이 종료될 때까지 블로킹 상태로 유지
+    node.destroy_node() # 노드의 리소스를 정리하고 종료, 노드와 관련된 ROS 핸들을 정리
+    rp.shutdown() # rclpy 라이브러리 종료, ROS2와의 모든 연결 종료, 리소스 해제
 
 if __name__ == "__main__":
     main()
